@@ -1,0 +1,18 @@
+.home{
+    box-sizing: border-box;
+}
+.container1{
+    height: 600px;
+    background-color: rgb(249, 255, 161);
+}
+.container1 .images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.container1 .image{
+    background-color: white;
+    height: 400px;
+    width: 300px;
+}
