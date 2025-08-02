@@ -1,0 +1,95 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background: linear-gradient(180deg, #161616, #2c2c2c);
+  padding: 50px 0px;
+}
+.left {
+  padding: 20px;
+  height: 100px;
+  width: 100px;
+  background-color: azure;
+}
+.right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 25px;
+  background-color: #414141;
+  max-width: 475px;
+  border-radius: 5px;
+  box-shadow: inset 1px #161616;
+}
+.firstname {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-width: 200px;
+}
+.firstname label {
+  color: white;
+}
+.firstname input {
+  outline: none;
+  border: none;
+  padding: 5px;
+}
+.lastname {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-width: 200px;
+}
+.lastname label {
+  color: white;
+}
+.lastname input {
+  outline: none;
+  border: none;
+  padding: 5px;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex-basis: 100%;
+}
+.email label {
+  color: white;
+}
+.email input {
+  outline: none;
+  border: none;
+  padding: 5px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex-basis: 100%;
+}
+.message label {
+  color: white;
+}
+.message textarea {
+  padding: 5px;
+  outline: none;
+  border: none;
+  height: 80px;
+  resize: none; /* optional: prevents resizing */
+  vertical-align: top;
+  font-family: inherit;
+}
+.send{
+  padding: 5px 15px;
+  outline: none;
+  border: none;
+  color: #161616;
+  background-color: #cccccc;
+}
+.send:hover{
+  background-color: white;
+}

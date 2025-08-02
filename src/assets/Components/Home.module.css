@@ -7,7 +7,7 @@
   width: 100%;
   background: linear-gradient(180deg, #161616, #2c2c2c);
 }
-.line{
+.line {
   height: 30px;
   background-color: rgb(27, 27, 27);
 }
@@ -49,22 +49,27 @@
 }
 
 .projects {
+  display: flex;
+
+  flex-direction: column;
   background: linear-gradient(180deg, #ffffff, #bababa);
+  align-items: center;
 }
 
 .projectstag {
   padding-top: 20px;
   margin-bottom: -5px;
-  justify-self: center;
   font-size: 25px;
   font-weight: 800;
-  color: linear-gradient(90deg, #161616, #2c2c2c);
+  background: linear-gradient(90deg, #161616, #2c2c2c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .cards {
   display: flex;
-  justify-content: center;
   gap: 35px;
+  width: 1030px;
   flex-wrap: wrap;
   padding: 20px 0;
   padding-bottom: 50px;
@@ -75,13 +80,112 @@
   background-color: #161616;
   border-radius: 10px;
 }
-.skills{
+.skills {
   padding: 20px 0px;
-  height: 500px;
 }
-.skills p{
+.skills p {
   justify-self: center;
   font-size: 25px;
   font-weight: 800;
-  color: linear-gradient(90deg, #161616, #2c2c2c);
+  background: linear-gradient(90deg, #161616, #2c2c2c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.skillcontainer {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: white;
+  height: 100px;
+  width: 70%;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+.slider {
+  display: flex;
+  width: max-content;
+  gap: 50px;
+  animation: scroll 20s linear infinite;
+}
+.skillcontainer img {
+  height: 70px;
+  flex-shrink: 0;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.journey {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  padding: 50px 60px;
+  background: linear-gradient(0deg, #ffffff, #bababa);
+}
+.journey .leftjourney {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.journey .leftjourney h1 {
+  font-size: 60px;
+  font-weight: 900;
+}
+.journey .leftjourney h2 {
+  margin-top: -10px;
+  font-size: 30px;
+  font-weight: 800;
+}
+.journey .rightjourney {
+  padding: 3%;
+  width: 450px;
+  height: 250px;
+  background-color: white;
+  border: 7px solid #6e6e6e;
+  border-radius: 30px;
+  overflow-y: auto;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+  scrollbar-width: none;
+}
+
+.journey .jour {
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  margin: 2.5px 0px;
+  padding: 2.5px 0px;
+}
+.jour .jourline {
+  width: 3px;
+  background-color: #3a3a3a;
+  flex-shrink: 0;
+}
+.journey .jour h1 {
+  font-size: 20px;
+}
+.jourDescription {
+  font-size: 14px;
+  color: #313131;
+  margin-top: 5px;
+  transition: all 0.3s ease;
 }
