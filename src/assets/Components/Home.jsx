@@ -19,6 +19,9 @@ import photoshop from "../photoshop.png";
 import coreldraw from "../coreldraw.png";
 import premierpro from "../premierpro.png";
 import canva from "../canva.png";
+import card1 from "../card1.jpg";
+import card2 from "../card2.jpg";
+import card3 from "../card3.jpg";
 
 const journeyData = [
   {
@@ -61,7 +64,7 @@ const Home = () => {
             through every experience. I enjoy creating meaningful connections
             and making a positive impact in everything I do.
           </p>
-          <button className={styles.resume_button}>View Resume</button>
+          <a href="https://drive.google.com/file/d/1w7Pd3G46LTU-KytnUUOCkzBrcsOKbQFn/view?usp=drive_link" target="_blank"><button className={styles.resume_button}>View Resume</button></a>
         </div>
         <div className={styles.right}>
           <div className={styles.circle}>
@@ -73,9 +76,15 @@ const Home = () => {
       <div className={styles.projects}>
         <h1 className={styles.projectstag}>Things I've Built</h1>
         <div className={styles.cards}>
-          <div className={styles.card}></div>
-          <div className={styles.card}></div>
-          <div className={styles.card}></div>
+          <div className={styles.card}>
+            <img className={styles.card1} src={card1} alt="" />
+          </div>
+          <div className={styles.card}>
+            <img className={styles.card2} src={card2} alt="" />
+          </div>
+          <div className={styles.card}>
+            <img className={styles.card3} src={card3} alt="" />
+          </div>
           <div className={styles.card}></div>
           <div className={styles.card}></div>
           <div className={styles.card}></div>

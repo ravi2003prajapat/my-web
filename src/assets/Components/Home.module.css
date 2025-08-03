@@ -79,6 +79,20 @@
   width: 320px;
   background-color: #161616;
   border-radius: 10px;
+  position: relative; /* Needed for absolute positioning inside */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.card1{
+  height: 200px;
+}
+.card2{
+  height: 200px;
+}
+.card3{
+  height: 200px;
 }
 .skills {
   padding: 20px 0px;
