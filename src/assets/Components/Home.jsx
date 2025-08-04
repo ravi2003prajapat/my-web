@@ -22,6 +22,15 @@ import canva from "../canva.png";
 import card1 from "../card1.jpg";
 import card2 from "../card2.jpg";
 import card3 from "../card3.jpg";
+import certificate1 from "../certificate1.jpg";
+import certificate2 from "../certificate2.jpg";
+import certificate3 from "../certificate3.jpg";
+import certificate4 from "../certificate4.jpg";
+import certificate5 from "../certificate5.jpg";
+import certificate6 from "../certificate6.jpg";
+import certificate7 from "../certificate7.jpg";
+import certificate8 from "../certificate8.jpg";
+import certificate9 from "../certificate9.jpg";
 
 const journeyData = [
   {
@@ -51,15 +60,57 @@ const journeyData = [
 ];
 
 const certificates = [
-  { title: "AWS Certified Cloud Practitioner", buttonText: "View" },
-  { title: "Google Cloud Digital Leader", buttonText: "View" },
-  { title: "Microsoft Azure Fundamentals", buttonText: "View" },
-  { title: "DevOps Essentials", buttonText: "View" },
-  { title: "Linux Basics for Cloud", buttonText: "View" },
+  {
+    title: "Amazon AWS Certified Cloud Practitioner",
+    buttonText: "View",
+    image: certificate1,
+  },
+  {
+    title: "Google Cloud Student Practitioner",
+    buttonText: "View",
+    image: certificate2,
+  },
+  {
+    title: "Oracle Certified Multi Cloud Architect Associate",
+    buttonText: "View",
+    image: certificate3,
+  },
+  {
+    title: "Oracle University Certified Architect Associate",
+    buttonText: "View",
+    image: certificate4,
+  },
+  {
+    title: "US San Diego Algorithmic Toolbox",
+    buttonText: "View",
+    image: certificate5,
+  },
+  {
+    title: "US San Diego Data Structures",
+    buttonText: "View",
+    image: certificate6,
+  },
+  {
+    title: "Infosys Springboard Programming Using C++",
+    buttonText: "View",
+    image: certificate7,
+  },
+  {
+    title: "Amazon AWS Academy Cloud Foundations",
+    buttonText: "View",
+    image: certificate8,
+  },
+  {
+    title: "Google The Bits and Bytes of Computer Networking",
+    buttonText: "View",
+    image: certificate9,
+  },
 ];
 
 const Home = () => {
   const [openIndex, setOpenIndex] = useState(null);
+
+  const [activeImage, setActiveImage] = useState(null);
 
   return (
     <>
@@ -88,6 +139,7 @@ const Home = () => {
         </div>
       </div>
       <div className={styles.line}></div>
+
       <div className={styles.projects}>
         <h1 className={styles.projectstag}>Things I've Built</h1>
         <div className={styles.cards}>
@@ -99,13 +151,17 @@ const Home = () => {
           </div>
           <div className={styles.card}>
             <img className={styles.card2} src={card2} alt="" />
+            <a href="https://www.radicalminds.in/industries/education">
+              <button>Click Here</button>
+            </a>
           </div>
           <div className={styles.card}>
             <img className={styles.card3} src={card3} alt="" />
+            <a href="https://github.com/RaviPrajapat007/Tunest/tree/main/Tunest%20Project">
+              <button>Click Here</button>
+            </a>
           </div>
-          <div className={styles.card}></div>
-          <div className={styles.card}></div>
-          <div className={styles.card}></div>
+          
         </div>
       </div>
       <div className={styles.skills}>
@@ -178,17 +234,44 @@ const Home = () => {
         </div>
       </div>
       <div className={styles.certificatecontainer}>
-        {certificates.map((cert, index) => (
-          <div key={index} className={styles.certificate}>
-            <div className={styles.top}>
-              <h1>{cert.title}</h1>
+        <h1 className={styles.certificateheading}>
+          Certifications & Achievements
+        </h1>
+        <div className={styles.content}>
+          {certificates.map((cert, index) => (
+            <div key={index} className={styles.certificate}>
+              <div className={styles.top}>
+                <h1>{cert.title}</h1>
+              </div>
+              <div className={styles.bottom}>
+                <button onClick={() => setActiveImage(cert.image)}>
+                  {cert.buttonText}
+                </button>
+              </div>
             </div>
-            <div className={styles.bottom}>
-              <button>{cert.buttonText}</button>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
+      {activeImage && (
+        <div
+          className={styles.modalOverlay}
+          onClick={() => setActiveImage(null)}
+        >
+          <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
+            <img
+              src={activeImage}
+              alt="Certificate"
+              className={styles.modalImage}
+            />
+            <button
+              className={styles.closeButton}
+              onClick={() => setActiveImage(null)}
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </>
   );
 };

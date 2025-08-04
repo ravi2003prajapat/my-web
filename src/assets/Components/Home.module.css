@@ -69,6 +69,7 @@
 .cards {
   display: flex;
   gap: 35px;
+  width: 1030px;
   justify-content: center;
   flex-wrap: wrap;
   padding: 20px 0;
@@ -218,20 +219,32 @@
   transition: all 0.3s ease;
 }
 .certificatecontainer {
-  display: flex;
-  gap: 35px;
-  justify-content: center;
   padding: 20px 0px;
-  flex-wrap: wrap;
   padding-bottom: 50px;
   background-color: #bababa;
 }
+.certificateheading{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #161616, #2c2c2c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.certificatecontainer .content{
+  width: 1030px;
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
 .certificate {
-  width: 250px;
+  width: 220px;
   display: flex;
   padding: 15px 15px;
   flex-direction: column;     /* stack children vertically */
-  background-color: #161616;
+  background: linear-gradient(90deg, #161616, #2c2c2c);
   border-radius: 10px;
 }
 .top{
@@ -261,4 +274,47 @@
 }
 .bottom button:hover{
   background-color: white;
+}
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.modalImage {
+  max-width: 100%;
+  max-height: 70vh;
+  display: block;
+  margin: auto;
+}
+
+.closeButton {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
