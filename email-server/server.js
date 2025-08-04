@@ -45,8 +45,6 @@ Email: ${email}
 app.get("/", (req, res) => {
   res.send("Email server is running");
 });
-
 app.listen(5000, "0.0.0.0", () => {
   console.log("Server started on http://0.0.0.0:5000");
 });
-
