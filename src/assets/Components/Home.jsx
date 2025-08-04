@@ -27,25 +27,35 @@ const journeyData = [
   {
     title: "Until 2021: School Education",
     description:
-      "Completed schooling with a strong focus on science and mathematics.",
+      "Focused on developing a well-rouneded academic backgorund while actively participating in extracurricular activites. This phase helped me build essential soft skill like discipline, curiosity, communication, and time management. It was a formative period that shaped my attitude toward learning and growth.",
   },
   {
     title: "2022-Present: B.Tech in Computer Science",
     description:
-      "Pursuing engineering at Bennett University, learning programming, systems, and more.",
+      "Pursuing a comprehensive education in computer science, exploring subjects like data structures, algorithms, databases, and software development. Alongside academics, actively involved in practical projects, teamwork, and skill-building activities. This phase is sharpening my analytical thinking, technical proficiency, and professional approach toward solving real-world problems.",
   },
   {
     title: "September, 2024: Intern at Bennett University",
-    description: "Worked on internal tools and platforms at the university.",
+    description:
+      "Contributed during the NAAC accreditation period by supporting the university’s digital presence. Designed user interfaces for official website pages, including the Student Council page, ensuring clean layout, consistency, and responsiveness. This experience helped me understand design standards in academic institutions and collaborate on real-time requirements.",
   },
   {
     title: "July, 2025: Intern at Insightknox",
-    description: "Contributed to full-stack web development projects.",
+    description:
+      "Worked as a frontend development intern, where I was responsible for designing and developing the entire company website from scratch. The site is now live and serves as Insightknox’s official online presence. This experience helped me strengthen my frontend skills and understand real-world deployment workflows.",
   },
   {
     title: "August, 2025: Intern at RMT Engineering",
     description: "Involved in software automation and testing.",
   },
+];
+
+const certificates = [
+  { title: "AWS Certified Cloud Practitioner", buttonText: "View" },
+  { title: "Google Cloud Digital Leader", buttonText: "View" },
+  { title: "Microsoft Azure Fundamentals", buttonText: "View" },
+  { title: "DevOps Essentials", buttonText: "View" },
+  { title: "Linux Basics for Cloud", buttonText: "View" },
 ];
 
 const Home = () => {
@@ -64,7 +74,12 @@ const Home = () => {
             through every experience. I enjoy creating meaningful connections
             and making a positive impact in everything I do.
           </p>
-          <a href="https://drive.google.com/file/d/1w7Pd3G46LTU-KytnUUOCkzBrcsOKbQFn/view?usp=drive_link" target="_blank"><button className={styles.resume_button}>View Resume</button></a>
+          <a
+            href="https://drive.google.com/file/d/1w7Pd3G46LTU-KytnUUOCkzBrcsOKbQFn/view?usp=drive_link"
+            target="_blank"
+          >
+            <button className={styles.resume_button}>View Resume</button>
+          </a>
         </div>
         <div className={styles.right}>
           <div className={styles.circle}>
@@ -78,7 +93,9 @@ const Home = () => {
         <div className={styles.cards}>
           <div className={styles.card}>
             <img className={styles.card1} src={card1} alt="" />
-            <a href="https://www.insightknox.com/"><button>Click Here</button></a>
+            <a href="https://www.insightknox.com/">
+              <button>Click Here</button>
+            </a>
           </div>
           <div className={styles.card}>
             <img className={styles.card2} src={card2} alt="" />
@@ -159,6 +176,18 @@ const Home = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className={styles.certificatecontainer}>
+        {certificates.map((cert, index) => (
+          <div key={index} className={styles.certificate}>
+            <div className={styles.top}>
+              <h1>{cert.title}</h1>
+            </div>
+            <div className={styles.bottom}>
+              <button>{cert.buttonText}</button>
+            </div>
+          </div>
+        ))}
       </div>
     </>
   );

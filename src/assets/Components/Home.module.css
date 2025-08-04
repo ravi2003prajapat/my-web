@@ -69,7 +69,7 @@
 .cards {
   display: flex;
   gap: 35px;
-  width: 1030px;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 20px 0;
   padding-bottom: 50px;
@@ -91,11 +91,11 @@
   object-fit: cover;
   display: block;
 }
-.card a button{
+.card a button {
   font-size: 18px;
   font-weight: 600;
   position: absolute;
-  bottom: 18px;
+  bottom: 22px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
@@ -105,7 +105,7 @@
   padding: 2px 15px;
   border-radius: 25px;
 }
-.card a button:hover{
+.card a button:hover {
   background-color: white;
 }
 .skills {
@@ -216,4 +216,49 @@
   color: #313131;
   margin-top: 5px;
   transition: all 0.3s ease;
+}
+.certificatecontainer {
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  padding: 20px 0px;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  background-color: #bababa;
+}
+.certificate {
+  width: 250px;
+  display: flex;
+  padding: 15px 15px;
+  flex-direction: column;     /* stack children vertically */
+  background-color: #161616;
+  border-radius: 10px;
+}
+.top{
+  height: 70px;
+  padding: 45px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.certificate .top h1 {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+.certificate .bottom {
+  display: flex;
+  justify-content: center;
+}
+.bottom button{
+  padding: 2px 12px;
+  border: none;
+  border-radius: 20px;
+  font-size: 17px;
+  font-weight: 600;
+  background-color: #b8b8b8;
+}
+.bottom button:hover{
+  background-color: white;
 }

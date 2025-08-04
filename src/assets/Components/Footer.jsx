@@ -22,7 +22,7 @@ const Footer = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:5000/send", {
+      const response = await fetch("http://172.20.23.122:5000/send", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
