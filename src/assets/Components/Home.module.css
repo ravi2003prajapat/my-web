@@ -85,7 +85,32 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+
+
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+transition: transform 0.3s ease;
 }
+
+/* Effect 1 */
+/* .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00ffe1, 0 0 30px #ff00e1;
+} */
+
+
+/* Effect 2 */
+/* .card:hover {
+  transform: translateY(-15px);
+  filter: brightness(1.2);
+  box-shadow: 0 10px 20px rgba(91, 91, 91, 0.3);
+} */
+
+/* Effect 3 */
+.card:hover {
+  transform: rotateX(5deg) rotateY(5deg) scale(1.05);
+}
+
+
 .card img {
   width: 100%;
   height: 100%;
@@ -223,7 +248,7 @@
   padding-bottom: 50px;
   background-color: #bababa;
 }
-.certificateheading{
+.certificateheading {
   text-align: center;
   font-size: 25px;
   font-weight: 800;
@@ -231,7 +256,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.certificatecontainer .content{
+.certificatecontainer .content {
   width: 1030px;
   display: flex;
   gap: 35px;
@@ -243,11 +268,11 @@
   width: 220px;
   display: flex;
   padding: 15px 15px;
-  flex-direction: column;     /* stack children vertically */
+  flex-direction: column; /* stack children vertically */
   background: linear-gradient(90deg, #161616, #2c2c2c);
   border-radius: 10px;
 }
-.top{
+.top {
   height: 70px;
   padding: 45px 0px;
   display: flex;
@@ -264,7 +289,7 @@
   display: flex;
   justify-content: center;
 }
-.bottom button{
+.bottom button {
   padding: 2px 12px;
   border: none;
   border-radius: 20px;
@@ -272,7 +297,7 @@
   font-weight: 600;
   background-color: #b8b8b8;
 }
-.bottom button:hover{
+.bottom button:hover {
   background-color: white;
 }
 .modalOverlay {

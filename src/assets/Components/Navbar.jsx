@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className={styles.navbar}>
-      <div className={styles.logo}>Ravi Prajapat</div>
+      <a href="https://my-web-five-eta.vercel.app/">
+        <div className={styles.logo}>Ravi Prajapat</div>
+      </a>
       <ul>
         <li>
           <Link to="/" className={styles.nav_pages}>

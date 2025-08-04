@@ -31,6 +31,9 @@ import certificate6 from "../certificate6.jpg";
 import certificate7 from "../certificate7.jpg";
 import certificate8 from "../certificate8.jpg";
 import certificate9 from "../certificate9.jpg";
+import certificate10 from "../certificate10.jpg";
+import certificate11 from "../certificate11.jpg";
+import certificate12 from "../certificate12.jpg";
 
 const journeyData = [
   {
@@ -104,6 +107,21 @@ const certificates = [
     title: "Google The Bits and Bytes of Computer Networking",
     buttonText: "View",
     image: certificate9,
+  },
+  {
+    title: "Infosys Springboard Software Engineering",
+    buttonText: "View",
+    image: certificate10,
+  },
+  {
+    title: "Infosys Springboard Introduction to Agile Testing",
+    buttonText: "View",
+    image: certificate11,
+  },
+  {
+    title: "Infosys Springboard Introduction Artificial Intelligence",
+    buttonText: "View",
+    image: certificate12,
   },
 ];
 

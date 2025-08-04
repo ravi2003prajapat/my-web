@@ -18,6 +18,9 @@
         -webkit-text-fill-color: transparent;
     cursor: pointer;
 }
+.navbar a{
+    text-decoration: none;
+}
 .navbar ul{
     justify-content: center;
     display: flex;
