@@ -78,6 +78,7 @@ const Home = () => {
         <div className={styles.cards}>
           <div className={styles.card}>
             <img className={styles.card1} src={card1} alt="" />
+            <a href="https://www.insightknox.com/"><button>Click Here</button></a>
           </div>
           <div className={styles.card}>
             <img className={styles.card2} src={card2} alt="" />

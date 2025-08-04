@@ -85,14 +85,28 @@
   align-items: center;
   overflow: hidden;
 }
-.card1{
-  height: 200px;
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
-.card2{
-  height: 200px;
+.card a button{
+  font-size: 18px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  background-color: #cfcfcf;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 2px 15px;
+  border-radius: 25px;
 }
-.card3{
-  height: 200px;
+.card a button:hover{
+  background-color: white;
 }
 .skills {
   padding: 20px 0px;
