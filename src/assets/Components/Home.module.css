@@ -461,20 +461,24 @@
   }
 
   /* Certificates */
+  .certificateheading {
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
   .certificatecontainer {
     padding: 20px 30px;
   }
   .certificatecontainer .content {
     width: 100%;
-    gap: 15px;
+    gap: 10px;
     align-items: center;
   }
   .certificate {
-    width: 160px;
-    padding: 5px 10px;
+    width: 130px;
+    padding: 0px 10px;
   }
   .certificate .top h1 {
-    font-size: 15px;
+    font-size: 12px;
   }
   .certificate:hover {
     transform: none !important;
