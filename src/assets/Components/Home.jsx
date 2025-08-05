@@ -179,7 +179,6 @@ const Home = () => {
               <button>Click Here</button>
             </a>
           </div>
-          
         </div>
       </div>
       <div className={styles.skills}>
@@ -255,9 +254,14 @@ const Home = () => {
         <h1 className={styles.certificateheading}>
           Certifications & Achievements
         </h1>
+
         <div className={styles.content}>
           {certificates.map((cert, index) => (
-            <div key={index} className={styles.certificate} onClick={() => setActiveImage(cert.image)}>
+            <div
+              key={index}
+              className={styles.certificate}
+              onClick={() => setActiveImage(cert.image)}
+            >
               <div className={styles.top}>
                 <h1>{cert.title}</h1>
               </div>
@@ -265,6 +269,7 @@ const Home = () => {
           ))}
         </div>
       </div>
+
       {activeImage && (
         <div
           className={styles.modalOverlay}
