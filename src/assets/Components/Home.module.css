@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   padding: 50px 135px;
   padding-top: 70px;
   width: 100%;
@@ -86,9 +87,8 @@
   align-items: center;
   overflow: hidden;
 
-
   /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 /* Effect 1 */
@@ -96,7 +96,6 @@ transition: transform 0.3s ease;
   transform: scale(1.05);
   box-shadow: 0 0 15px #00ffe1, 0 0 30px #ff00e1;
 } */
-
 
 /* Effect 2 */
 /* .card:hover {
@@ -109,7 +108,6 @@ transition: transform 0.3s ease;
 .card:hover {
   transform: rotateX(5deg) rotateY(5deg) rotateZ(2deg) scale(1.05);
 }
-
 
 .card img {
   width: 100%;
@@ -275,7 +273,7 @@ transition: transform 0.3s ease;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.certificate:hover{
+.certificate:hover {
   transform: scale(1.15);
   box-shadow: 0 0 15px #ffffff, 0 0 30px #000000;
 }
@@ -334,3 +332,152 @@ transition: transform 0.3s ease;
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (max-width: 480px) {
+  .home {
+    flex-direction: column;
+    padding: 30px 20px;
+    align-items: center;
+  }
+
+  .left {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .left h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .left p {
+    font-size: 10px;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .resume_button {
+    display: block;
+    margin: 20px auto 0 auto;
+    font-size: 16px;
+    padding: 8px 24px;
+  }
+
+  .right {
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .right .circle {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    height: 200px;
+    width: 200px;
+  }
+  .circle .photo {
+    position: absolute;
+    width: 200px;
+    bottom: 0;
+    top: auto;
+  }
+
+  /* Projects */
+  .projects {
+    width: 100%;
+    padding: 20px 10px 40px 10px;
+  }
+  .cards {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+  }
+  .card {
+    width: 90%;
+    height: auto;
+  }
+  .card img {
+    height: auto;
+  }
+  .card a button {
+    font-size: 16px;
+    padding: 8px 16px;
+    bottom: 15px;
+  }
+
+  /* Skills */
+  .skills {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .skillcontainer {
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+  }
+  .skillcontainer img {
+    height: 50px;
+  }
+  .slider {
+    gap: 30px;
+    animation-duration: 15s;
+  }
+  .skills p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /* Journey */
+  .journey {
+    flex-direction: column;
+    padding: 30px 15px;
+    gap: 20px;
+    align-items: center;
+  }
+  .journey .leftjourney {
+    align-items: center;
+  }
+  .journey .leftjourney h1 {
+    font-size: 40px;
+  }
+  .journey .leftjourney h2 {
+    font-size: 22px;
+  }
+  .journey .rightjourney {
+    width: 90%;
+    height: 300px;
+    padding: 15px;
+  }
+
+  /* Certificates */
+  .certificatecontainer {
+    padding: 20px 10px 40px 10px;
+  }
+  .certificatecontainer .content {
+    width: 100%;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  .certificate {
+    width: 90%;
+    padding: 15px 10px;
+  }
+  .certificate .top h1 {
+    font-size: 18px;
+  }
+
+  /* Modal */
+  .modal {
+    max-width: 95%;
+    max-height: 95%;
+    padding: 15px;
+  }
+  .modalImage {
+    max-height: 60vh;
+  }
+  .closeButton {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+

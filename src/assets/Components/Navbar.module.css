@@ -60,3 +60,32 @@
 .navbar ul button:hover{
     background-color: #ffffff;
 }
+
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px 10px;
+    gap: 15px;
+  }
+
+  .navbar .logo {
+    font-size: 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar ul li {
+    font-size: 16px;
+  }
+
+  .navbar ul button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    border-radius: 20px;
+  }
+}
