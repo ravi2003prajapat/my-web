@@ -240,7 +240,7 @@ const Home = () => {
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
             >
               <div className={styles.jourline}></div>
-              <div>
+              <div className={styles.heading}>
                 {item.title.split(":")[0]}:
                 <strong>{item.title.split(":")[1]}</strong>
                 {openIndex === index && (

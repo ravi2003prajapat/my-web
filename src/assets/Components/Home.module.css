@@ -345,11 +345,12 @@
     margin-bottom: 30px;
   }
   .left h1 {
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
   }
   .left p {
-    font-size: 10px;
+    margin: auto;
+    font-size: 11px;
     text-align: center;
     padding: 0 10px;
   }
@@ -362,7 +363,7 @@
 
   .right {
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px;
   }
   .right .circle {
     display: flex;
@@ -382,9 +383,10 @@
   /* Projects */
   .projects {
     width: 100%;
-    padding: 20px 10px 40px 10px;
+    padding: 20px 10px;
   }
   .cards {
+    display: flex;
     flex-direction: column;
     width: 100%;
     gap: 20px;
@@ -402,14 +404,16 @@
     padding: 8px 16px;
     bottom: 15px;
   }
-
+  .card:hover {
+    transform: none !important;
+  }
   /* Skills */
   .skills {
     width: 100%;
     padding: 10px 0;
   }
   .skillcontainer {
-    width: 100%;
+    width: 80%;
     height: 80px;
     margin: 0 auto;
   }
@@ -428,9 +432,10 @@
 
   /* Journey */
   .journey {
+    display: flex;
     flex-direction: column;
     padding: 30px 15px;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
   }
   .journey .leftjourney {
@@ -444,8 +449,17 @@
   }
   .journey .rightjourney {
     width: 90%;
-    height: 300px;
+    height: 250px;
     padding: 15px;
+  }
+  .journey .jour .heading {
+    font-size: 15px;
+  }
+  .jourDescription {
+    font-size: 14px;
+    color: #313131;
+    margin-top: 5px;
+    transition: all 0.3s ease;
   }
 
   /* Certificates */
@@ -480,4 +494,3 @@
     padding: 6px 12px;
   }
 }
-
