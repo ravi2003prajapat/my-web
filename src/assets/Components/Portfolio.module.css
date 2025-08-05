@@ -1,0 +1,13 @@
+.portfolio {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(180deg, #bebebe, #ffffff);
+}
+.uicontainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    background-color: aqua;
+    align-items: center;
+}
