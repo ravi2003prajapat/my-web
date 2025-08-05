@@ -128,7 +128,7 @@ const certificates = [
 const Home = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
-  
+  const [activeImage, setActiveImage] = useState(null);
 
   return (
     <>
