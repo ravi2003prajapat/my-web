@@ -148,14 +148,11 @@
     flex-direction: column;
   }
   .firstname,
-  .lastname {
+  .lastname, .email, .message {
     max-width: 100%;
     width: 100%;
   }
-  .email,
-  .message {
-    flex-basis: 100%;
-  }
+
   .firstname input,
   .lastname input,
   .email input,

@@ -383,7 +383,7 @@
   /* Projects */
   .projects {
     width: 100%;
-    padding: 20px 10px;
+    padding: 10px 20px;
   }
   .cards {
     display: flex;
@@ -391,6 +391,7 @@
     width: 100%;
     gap: 20px;
     align-items: center;
+    padding-bottom: 20px;
   }
   .card {
     width: 90%;
@@ -461,11 +462,11 @@
 
   /* Certificates */
   .certificatecontainer {
-    padding: 20px 10px;
+    padding: 20px 30px;
   }
   .certificatecontainer .content {
     width: 100%;
-    gap: 25px;
+    gap: 15px;
     align-items: center;
   }
   .certificate {
@@ -475,8 +476,9 @@
   .certificate .top h1 {
     font-size: 15px;
   }
-    .certificate:hover {
+  .certificate:hover {
     transform: none !important;
+    box-shadow: none !important;
   }
 
   /* Modal */
