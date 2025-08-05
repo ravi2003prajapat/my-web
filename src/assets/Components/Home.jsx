@@ -257,14 +257,9 @@ const Home = () => {
         </h1>
         <div className={styles.content}>
           {certificates.map((cert, index) => (
-            <div key={index} className={styles.certificate}>
+            <div key={index} className={styles.certificate} onClick={() => setActiveImage(cert.image)}>
               <div className={styles.top}>
                 <h1>{cert.title}</h1>
-              </div>
-              <div className={styles.bottom}>
-                <button onClick={() => setActiveImage(cert.image)}>
-                  {cert.buttonText}
-                </button>
               </div>
             </div>
           ))}

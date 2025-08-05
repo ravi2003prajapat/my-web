@@ -107,7 +107,7 @@ transition: transform 0.3s ease;
 
 /* Effect 3 */
 .card:hover {
-  transform: rotateX(5deg) rotateY(5deg) scale(1.05);
+  transform: rotateX(5deg) rotateY(5deg) rotateZ(2deg) scale(1.05);
 }
 
 
@@ -252,6 +252,7 @@ transition: transform 0.3s ease;
   text-align: center;
   font-size: 25px;
   font-weight: 800;
+  margin-bottom: 20px;
   background: linear-gradient(90deg, #161616, #2c2c2c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -265,16 +266,21 @@ transition: transform 0.3s ease;
   margin: 0 auto;
 }
 .certificate {
+  cursor: pointer;
   width: 220px;
   display: flex;
-  padding: 15px 15px;
-  flex-direction: column; /* stack children vertically */
+  padding: 20px 5px;
+  flex-direction: column;
   background: linear-gradient(90deg, #161616, #2c2c2c);
   border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.certificate:hover{
+  transform: scale(1.15);
+  box-shadow: 0 0 15px #ffffff, 0 0 30px #000000;
 }
 .top {
   height: 70px;
-  padding: 45px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -284,21 +290,6 @@ transition: transform 0.3s ease;
   color: white;
   text-align: center;
   font-size: 20px;
-}
-.certificate .bottom {
-  display: flex;
-  justify-content: center;
-}
-.bottom button {
-  padding: 2px 12px;
-  border: none;
-  border-radius: 20px;
-  font-size: 17px;
-  font-weight: 600;
-  background-color: #b8b8b8;
-}
-.bottom button:hover {
-  background-color: white;
 }
 .modalOverlay {
   position: fixed;
