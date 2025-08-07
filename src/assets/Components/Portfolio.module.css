@@ -1,13 +1,132 @@
 .portfolio {
-  width: 100%;
-  height: 500px;
-  background: linear-gradient(180deg, #bebebe, #ffffff);
+  display: flex;
+  justify-content: center;
 }
-.uicontainer{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100px;
-    background-color: aqua;
-    align-items: center;
+
+.uicontainer {
+  padding: 25px 0px;
+  text-align: center;
+  width: 68%;
+}
+
+.uicontainer h1 {
+  font-size: 25px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #161616, #2c2c2c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.uibox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 10px;
+}
+
+.uidesigns {
+  width: 319px;
+  height: 165px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(22, 22, 22, 0.2);
+}
+
+.uidesigns:hover {
+  transform: scale(1.05);
+}
+
+.uiImage {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.uiImage:hover {
+  transform: scale(1.02);
+}
+
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85); /* Darker for better focus */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px); /* Adds a blur effect for elegance */
+}
+
+.modalContent {
+  position: relative;
+  background: #1e1e1e;
+  padding: 16px;
+  border-radius: 16px;
+  max-width: 70%;
+  max-height: 90vh;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  overflow: auto;
+  animation: fadeIn 0.3s ease-in-out;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.modalContent img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  height: 50px;
+  width: 50px;
+  display: flex; /* Needed to center the icon */
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  background-color: #535353;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.closeBtn:hover {
+  background-color: #3a3a3a; /* Darker shade on hover */
+}
+
+.modalContent::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modalContent::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
