@@ -25,3 +25,4 @@ dist-ssr
 
 # Ignore backend env file
 email-server/.env
+.vercel

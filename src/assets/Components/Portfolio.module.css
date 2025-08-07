@@ -1,12 +1,15 @@
 .portfolio {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .uicontainer {
+  background: linear-gradient(180deg, #ffffff, #bababa);
   padding: 25px 0px;
   text-align: center;
-  width: 68%;
+  width: 100%;
 }
 
 .uicontainer h1 {
@@ -18,9 +21,11 @@
 }
 
 .uibox {
+  width: 68%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: auto;
   gap: 25px;
   padding: 10px;
 }
@@ -52,6 +57,60 @@
   transform: scale(1.02);
 }
 
+/* Graphic Designs */
+.graphiccontainer {
+  background: linear-gradient(180deg, #ffffff, #bababa);
+  padding: 25px 0px;
+  text-align: center;
+  width: 100%;
+}
+
+.graphiccontainer h1 {
+  font-size: 25px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #161616, #2c2c2c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.graphicbox {
+  width: 68%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  gap: 25px;
+  padding: 10px;
+}
+
+.graphicdesigns {
+  width: 319px;
+  height: 165px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(22, 22, 22, 0.2);
+}
+
+.graphicdesigns:hover {
+  transform: scale(1.05);
+}
+
+.graphicImage {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.graphicImage:hover {
+  transform: scale(1.02);
+}
+
+
 /* Modal Styles */
 .modalOverlay {
   position: fixed;
@@ -72,7 +131,7 @@
   background: #1e1e1e;
   padding: 16px;
   border-radius: 16px;
-  max-width: 70%;
+  max-width: 50%;
   max-height: 90vh;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
   overflow: auto;
@@ -105,6 +164,7 @@
   border-radius: 50%;
   transition: background 0.3s ease;
 }
+
 
 .closeBtn:hover {
   background-color: #3a3a3a; /* Darker shade on hover */

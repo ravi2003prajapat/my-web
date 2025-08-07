@@ -5,17 +5,36 @@ import ui2 from "../ui2.png";
 import ui3 from "../ui3.jpg";
 import ui4 from "../ui4.jpg";
 import ui5 from "../ui5.jpg";
-import graphic from "../graphic1.jpg";
+import graphic1 from "../graphic1.jpg";
+import graphic2 from "../graphic2.jpg";
+import graphic3 from "../graphic3.jpg";
+import graphic4 from "../graphic4.jpg";
+import graphic5 from "../graphic5.jpg";
+import graphic6 from "../graphic6.jpg";
+import graphic7 from "../graphic7.jpg";
+import graphic8 from "../graphic8.jpg";
+import graphic9 from "../graphic9.jpg";
+import graphic10 from "../graphic10.jpg";
+import graphic11 from "../graphic11.jpg";
+
 
 const Portfolio = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const images = [
-    ui1,
-    ui3,
-    ui2,
-    ui4,
-    ui5,
+  const images = [ui1, ui3, ui2, ui4, ui5];
+
+  const graphicdesigns = [
+    graphic1,
+    graphic2,
+    graphic3,
+    graphic4,
+    graphic5,
+    graphic6,
+    graphic7,
+    graphic8,
+    graphic9,
+    graphic10,
+    graphic11,
   ];
 
   const openImage = (img) => setSelectedImage(img);
@@ -57,7 +76,39 @@ const Portfolio = () => {
         )}
       </div>
 
-      <div className={styles.graphiccontainer}></div>
+      <div className={styles.graphiccontainer}>
+        <h1>Graphic Designs</h1>
+        <div className={styles.graphicbox}>
+          {graphicdesigns.map((img, index) => (
+            <div
+              key={index}
+              className={styles.graphicdesigns}
+              onClick={() => openImage(img)}
+            >
+              <img
+                src={img}
+                alt={`UI Design ${index + 1}`}
+                className={styles.graphicImage}
+              />
+            </div>
+          ))}
+        </div>
+
+        {/* Modal Section */}
+        {selectedImage && (
+          <div className={styles.modalOverlay} onClick={closeImage}>
+            <div
+              className={styles.modalContent}
+              onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside image
+            >
+              <button onClick={closeImage} className={styles.closeBtn}>
+                ×
+              </button>
+              <img src={selectedImage} alt="Enlarged UI" />
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
