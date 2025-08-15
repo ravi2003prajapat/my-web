@@ -58,7 +58,7 @@ const journeyData = [
   },
   {
     title: "August, 2025: Intern at RMT Engineering",
-    description: "Involved in software automation and testing.",
+    description: "Built a real-time chat app with React.js (Vite), Node.js, and MySQL for instant user communication. Managed database operations in DBeaver, conducted a Time Motion Study for CoinDCX’s dashboard, and developed reusable UI components for Radical Minds Technologies’ website.",
   },
 ];
 
@@ -144,7 +144,7 @@ const Home = () => {
             and making a positive impact in everything I do.
           </p>
           <a
-            href="https://drive.google.com/file/d/1w7Pd3G46LTU-KytnUUOCkzBrcsOKbQFn/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1_08psiiNj9zsrQvv-guhv8ls6aL7V71P/view?usp=sharing"
             target="_blank"
           >
             <button className={styles.resume_button}>View Resume</button>

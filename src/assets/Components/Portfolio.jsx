@@ -16,6 +16,7 @@ import graphic8 from "../graphic8.jpg";
 import graphic9 from "../graphic9.jpg";
 import graphic10 from "../graphic10.jpg";
 import graphic11 from "../graphic11.jpg";
+import graphic12 from "../graphic12.jpg";
 
 
 const Portfolio = () => {
@@ -35,6 +36,7 @@ const Portfolio = () => {
     graphic9,
     graphic10,
     graphic11,
+    graphic12,
   ];
 
   const openImage = (img) => setSelectedImage(img);

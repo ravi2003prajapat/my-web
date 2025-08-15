@@ -16,7 +16,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link to="/portfolio" className={styles.nav_pages}>
-            Portfolio
+            The Artboard
           </Link>
         </li>
         <li>

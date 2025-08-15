@@ -21,7 +21,7 @@
 }
 
 .uibox {
-  width: 68%;
+  width: 1030px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -74,7 +74,7 @@
 }
 
 .graphicbox {
-  width: 68%;
+  width: 1030px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
