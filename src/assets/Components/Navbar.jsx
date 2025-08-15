@@ -21,7 +21,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link to="/blog" className={styles.nav_pages}>
-            Blog
+            
           </Link>
         </li>
         <div id="contact">
