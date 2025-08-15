@@ -1,3 +1,5 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import React, { useState } from "react";
 import styles from "./Footer.module.css";
 import website from "../website.webp";
@@ -52,22 +54,22 @@ const Footer = () => {
           <h1>Contact us:</h1>
 
           <a href="https://my-web-five-eta.vercel.app/">
-            <img className={styles.website} src={website} alt="" />
+            <LazyLoadImage className={styles.website} src={website} alt="" />
           </a>
           <a href="https://www.linkedin.com/in/ravi-prajapat/" target="_blank">
-            <img className={styles.linkedin} src={linkedin} alt="" />
+            <LazyLoadImage className={styles.linkedin} src={linkedin} alt="" />
           </a>
           <a
             href="https://github.com/RaviPrajapat007?tab=repositories"
             target="_blank"
           >
-            <img className={styles.github} src={github} alt="" />
+            <LazyLoadImage className={styles.github} src={github} alt="" />
           </a>
           <a
             href="https://mail.google.com/mail/u/2/#inbox?compose=DmwnWrRspxSnQlSDCdcCnFLKjdpFZRrDKBkNgBQXMtMJkLTHnsNQZvqMmpcQNkRvsdjBCFKjFpqQ"
             target="_blank"
           >
-            <img className={styles.mail} src={mail} alt="" />
+            <LazyLoadImage className={styles.mail} src={mail} alt="" />
           </a>
         </div>
       </div>
