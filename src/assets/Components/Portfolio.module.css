@@ -190,3 +190,26 @@
     transform: scale(1);
   }
 }
+
+
+
+@media (max-width: 480px) {
+  .uibox,
+  .graphicbox {
+    width: 100%;              /* Remove fixed width */
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;   /* Stack items */
+    align-items: center;      /* Center horizontally */
+    justify-content: center;  /* Center vertically if needed */
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  .uidesigns,
+  .graphicdesigns {
+    width: 90%;
+    height: 150px;
+    margin: 0 auto;           /* Ensure centering */
+  }
+}
