@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import styles from "./Footer.module.css";
-import website from "../website.png";
-import linkedin from "../linkedin.png";
-import github from "../github.png";
-import mail from "../mail.png";
+import website from "../website.webp";
+import linkedin from "../linkedin.webp";
+import github from "../github.webp";
+import mail from "../mail.webp";
 
 const Footer = () => {
   const [firstName, setFirstName] = useState("");

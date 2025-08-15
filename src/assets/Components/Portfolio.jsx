@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 import styles from "./Portfolio.module.css";
-import ui1 from "../ui1.png";
-import ui2 from "../ui2.png";
-import ui3 from "../ui3.jpg";
-import ui4 from "../ui4.jpg";
-import ui5 from "../ui5.jpg";
-import graphic1 from "../graphic1.jpg";
-import graphic2 from "../graphic2.jpg";
-import graphic3 from "../graphic3.jpg";
-import graphic4 from "../graphic4.jpg";
-import graphic5 from "../graphic5.jpg";
-import graphic6 from "../graphic6.jpg";
-import graphic7 from "../graphic7.jpg";
-import graphic8 from "../graphic8.jpg";
-import graphic9 from "../graphic9.jpg";
-import graphic10 from "../graphic10.jpg";
-import graphic11 from "../graphic11.jpg";
-import graphic12 from "../graphic12.jpg";
+import ui1 from "../ui1.webp";
+import ui2 from "../ui2.webp";
+import ui3 from "../ui3.webp";
+import ui4 from "../ui4.webp";
+import ui5 from "../ui5.webp";
+import graphic1 from "../graphic1.webp";
+import graphic2 from "../graphic2.webp";
+import graphic3 from "../graphic3.webp";
+import graphic4 from "../graphic4.webp";
+import graphic5 from "../graphic5.webp";
+import graphic6 from "../graphic6.webp";
+import graphic7 from "../graphic7.webp";
+import graphic8 from "../graphic8.webp";
+import graphic9 from "../graphic9.webp";
+import graphic10 from "../graphic10.webp";
+import graphic11 from "../graphic11.webp";
+import graphic12 from "../graphic12.webp";
 
 
 const Portfolio = () => {
