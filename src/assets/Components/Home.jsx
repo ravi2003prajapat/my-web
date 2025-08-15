@@ -164,19 +164,19 @@ const Home = () => {
         <h1 className={styles.projectstag}>Things I've Built</h1>
         <div className={styles.cards}>
           <div className={styles.card}>
-            <LazyLoadImage className={styles.card1} src={card1} alt="" />
+            <LazyLoadImage effect="blur" className={styles.card1} src={card1} alt="" />
             <a href="https://www.insightknox.com/">
               <button>Click Here</button>
             </a>
           </div>
           <div className={styles.card}>
-            <LazyLoadImage className={styles.card2} src={card2} alt="" />
+            <LazyLoadImage effect="blur" className={styles.card2} src={card2} alt="" />
             <a href="https://www.radicalminds.in/industries/education">
               <button>Click Here</button>
             </a>
           </div>
           <div className={styles.card}>
-            <LazyLoadImage className={styles.card3} src={card3} alt="" />
+            <LazyLoadImage effect="blur" className={styles.card3} src={card3} alt="" />
             <a href="https://github.com/RaviPrajapat007/Tunest/tree/main/Tunest%20Project">
               <button>Click Here</button>
             </a>
@@ -187,44 +187,44 @@ const Home = () => {
         <p>My Stack</p>
         <div className={styles.skillcontainer}>
           <div className={styles.slider}>
-            <LazyLoadImage src={cpp} alt="" />
-            <LazyLoadImage src={javascript} alt="" />
-            <LazyLoadImage src={html} alt="" />
-            <LazyLoadImage src={css} alt="" />
-            <LazyLoadImage src={bootstrap} alt="" />
-            <LazyLoadImage src={java} alt="" />
-            <LazyLoadImage src={python} alt="" />
-            <LazyLoadImage src={react} alt="" />
-            <LazyLoadImage src={vite} alt="" />
-            <LazyLoadImage src={ckeditor} alt="" />
-            <LazyLoadImage src={vscode} alt="" />
-            <LazyLoadImage src={npm} alt="" />
-            <LazyLoadImage src={git} alt="" />
-            <LazyLoadImage src={figma} alt="" />
-            <LazyLoadImage src={photoshop} alt="" />
-            <LazyLoadImage src={coreldraw} alt="" />
-            <LazyLoadImage src={premierpro} alt="" />
-            <LazyLoadImage src={canva} alt="" />
+            <LazyLoadImage effect="blur" src={cpp} alt="" />
+            <LazyLoadImage effect="blur" src={javascript} alt="" />
+            <LazyLoadImage effect="blur" src={html} alt="" />
+            <LazyLoadImage effect="blur" src={css} alt="" />
+            <LazyLoadImage effect="blur" src={bootstrap} alt="" />
+            <LazyLoadImage effect="blur" src={java} alt="" />
+            <LazyLoadImage effect="blur" src={python} alt="" />
+            <LazyLoadImage effect="blur" src={react} alt="" />
+            <LazyLoadImage effect="blur" src={vite} alt="" />
+            <LazyLoadImage effect="blur" src={ckeditor} alt="" />
+            <LazyLoadImage effect="blur" src={vscode} alt="" />
+            <LazyLoadImage effect="blur" src={npm} alt="" />
+            <LazyLoadImage effect="blur" src={git} alt="" />
+            <LazyLoadImage effect="blur" src={figma} alt="" />
+            <LazyLoadImage effect="blur" src={photoshop} alt="" />
+            <LazyLoadImage effect="blur" src={coreldraw} alt="" />
+            <LazyLoadImage effect="blur" src={premierpro} alt="" />
+            <LazyLoadImage effect="blur" src={canva} alt="" />
 
             {/* Dupicated Images */}
-            <LazyLoadImage src={cpp} alt="" />
-            <LazyLoadImage src={javascript} alt="" />
-            <LazyLoadImage src={html} alt="" />
-            <LazyLoadImage src={css} alt="" />
-            <LazyLoadImage src={bootstrap} alt="" />
-            <LazyLoadImage src={java} alt="" />
-            <LazyLoadImage src={python} alt="" />
-            <LazyLoadImage src={react} alt="" />
-            <LazyLoadImage src={vite} alt="" />
-            <LazyLoadImage src={ckeditor} alt="" />
-            <LazyLoadImage src={vscode} alt="" />
-            <LazyLoadImage src={npm} alt="" />
-            <LazyLoadImage src={git} alt="" />
-            <LazyLoadImage src={figma} alt="" />
-            <LazyLoadImage src={photoshop} alt="" />
-            <LazyLoadImage src={coreldraw} alt="" />
-            <LazyLoadImage src={premierpro} alt="" />
-            <LazyLoadImage src={canva} alt="" />
+            <LazyLoadImage effect="blur" src={cpp} alt="" />
+            <LazyLoadImage effect="blur" src={javascript} alt="" />
+            <LazyLoadImage effect="blur" src={html} alt="" />
+            <LazyLoadImage effect="blur" src={css} alt="" />
+            <LazyLoadImage effect="blur" src={bootstrap} alt="" />
+            <LazyLoadImage effect="blur" src={java} alt="" />
+            <LazyLoadImage effect="blur" src={python} alt="" />
+            <LazyLoadImage effect="blur" src={react} alt="" />
+            <LazyLoadImage effect="blur" src={vite} alt="" />
+            <LazyLoadImage effect="blur" src={ckeditor} alt="" />
+            <LazyLoadImage effect="blur" src={vscode} alt="" />
+            <LazyLoadImage effect="blur" src={npm} alt="" />
+            <LazyLoadImage effect="blur" src={git} alt="" />
+            <LazyLoadImage effect="blur" src={figma} alt="" />
+            <LazyLoadImage effect="blur" src={photoshop} alt="" />
+            <LazyLoadImage effect="blur" src={coreldraw} alt="" />
+            <LazyLoadImage effect="blur" src={premierpro} alt="" />
+            <LazyLoadImage effect="blur" src={canva} alt="" />
           </div>
         </div>
       </div>
@@ -279,6 +279,7 @@ const Home = () => {
         >
           <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
             <LazyLoadImage
+            effect="blur"
               src={activeImage}
               alt="Certificate"
               className={styles.modalImage}
